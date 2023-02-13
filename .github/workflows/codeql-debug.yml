@@ -32,7 +32,7 @@ jobs:
         config-file: advanced-security/codeql-queries/config/codeql.yml@main #ql better
         #config-file: ./.github/codeql.yml #ql better
     
-
+    - run: ./mvnw clean install -Pall-java,all-scala,licenses -DskipTests
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
