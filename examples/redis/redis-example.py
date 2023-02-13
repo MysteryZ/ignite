@@ -20,7 +20,7 @@ You will also need to have 'redis-py' installed.
 See https://github.com/andymccurdy/redis-py for the details on redis-py.
 '''
 
-r = redis.StrictRedis(host='localhost', port=11211, db=0)
+r = redis.StrictRedis(host='192.168.68.132', port=11211, db=0)
 
 # set entry.
 r.set('k1', 1)
